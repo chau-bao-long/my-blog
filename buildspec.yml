@@ -24,3 +24,7 @@ artifacts:
   files:
     - '**/*'
   base-directory: public
+
+cache:
+  paths:
+    - 'node_modules/**/*'
