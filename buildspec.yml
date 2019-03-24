@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Start install package and environment"
+      - npm install -g yarn
+      - yarn global add gatsby-cli gatsby-dev-cli 
+  pre_build:
+    commands:
+      - echo "Install npm dependencies"
+      - yarn
+  build:
+    commands:
+      - echo "Run lint check and unit test"
+      - yarn lint
+      - yarn test
+  post_build:
+    commands:
+      - echo "Build webpack, uglify and minify, ..."
+      - yarn build
+
+artifacts:
+  files:
+    - public/**/*
