@@ -14,7 +14,6 @@ const Container = styled.div`
 export default () => (
   <Container>
     <Button type="primary">Primary</Button>
-    <Button type="danger">Danger</Button>
     <Switch defaultChecked />
   </Container>
 );
