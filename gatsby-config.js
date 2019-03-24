@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-eslint',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-antd',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
