@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 
 import { rhythm, scale } from '../utils/typography';
 
-class Layout extends React.Component {
+export default class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`; // eslint-disable-line no-undef
@@ -71,5 +71,3 @@ class Layout extends React.Component {
     );
   }
 }
-
-export default Layout;

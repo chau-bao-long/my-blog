@@ -122,7 +122,7 @@
     "react/jsx-indent": ["warn", 2],
     "react/jsx-indent-props": ["warn", 2],
     "react/jsx-key": "warn",
-    "react/jsx-max-props-per-line": ["warn", { "maximum": 4 }],
+    "react/jsx-max-props-per-line": ["warn", { "maximum": 10 }],
     "react/jsx-no-target-blank": "off",
     "react/no-array-index-key": "off",
     "react/no-danger": "off",
