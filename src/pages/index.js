@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 import { Parallax } from 'react-spring/renderprops-addons.cjs';
 
-import LandingPageLayout from '../components/LandingPageLayout';
+import Layout from '../components/LandingPage/Layout';
 import ProjectCard from '../components/ProjectCard';
 import { Title, BigTitle, SubTitle, Inner } from '../components/common';
-import Hero from '../views/Hero';
-import Projects from '../views/Projects';
-import About from '../views/About';
-import Contact from '../views/Contact';
+import Hero from '../components/LandingPage/Hero';
+import Projects from '../components/LandingPage/Projects';
+import About from '../components/LandingPage/About';
+import Contact from '../components/LandingPage/Contact';
 
 import avatar from '../styles/images/avatar.jpg';
 
@@ -53,13 +53,13 @@ const Footer = styled.footer`
 
 export default () => (
   <>
-    <LandingPageLayout />
+    <Layout />
     <Parallax pages={5}>
       <Hero offset={0}>
         <BigTitle>
           Hello, <br /> I'm Chau Bao Long.
         </BigTitle>
-        <SubTitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</SubTitle>
+        <SubTitle>I'm a software engineer who has wide experience in Android, React, Ruby On Rails, DevOps, etc.</SubTitle>
       </Hero>
       <Projects offset={1}>
         <Title>Projects</Title>

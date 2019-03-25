@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Divider, Content, Inner } from '../components/common';
-import { UpDown, UpDownWide } from '../styles/animations';
-import { colors } from '../../tailwind';
-import SVG from '../components/SVG';
+import { Divider, Content, Inner } from '../common';
+import { UpDown, UpDownWide } from '../../styles/animations';
+import { colors } from '../../../tailwind';
+import SVG from '../SVG';
 
 const About = ({ children, offset }) => (
   <>

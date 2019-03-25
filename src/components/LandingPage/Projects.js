@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Divider, DividerMiddle, Content, Inner } from '../components/common';
-import { UpDown, UpDownWide } from '../styles/animations';
-import { colors } from '../../tailwind';
-import SVG from '../components/SVG';
+import { Divider, DividerMiddle, Content, Inner } from '../common';
+import { UpDown, UpDownWide } from '../../styles/animations';
+import { colors } from '../../../tailwind';
+import SVG from '../SVG';
 
 export default ({ children, offset }) => (
   <>

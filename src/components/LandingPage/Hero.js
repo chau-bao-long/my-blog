@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
-import { colors } from '../../tailwind';
-import { Divider, Content } from '../components/common';
-import { UpDown, UpDownWide } from '../styles/animations';
-import SVG from '../components/SVG';
+import { colors } from '../../../tailwind';
+import { Divider, Content } from '../common';
+import { UpDown, UpDownWide } from '../../styles/animations';
+import SVG from '../SVG';
 
 const Wrapper = styled.div`
   ${tw`w-full xl:w-2/3`};

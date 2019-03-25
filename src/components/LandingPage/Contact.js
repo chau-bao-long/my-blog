@@ -2,10 +2,10 @@ import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
 
-import { Divider, Content } from '../components/common';
-import { UpDown, UpDownWide, waveAnimation } from '../styles/animations';
-import { colors } from '../../tailwind';
-import SVG from '../components/SVG';
+import { Divider, Content } from '../common';
+import { UpDown, UpDownWide, waveAnimation } from '../../styles/animations';
+import { colors } from '../../../tailwind';
+import SVG from '../SVG';
 
 const WaveWrapper = styled.div`
   ${tw`absolute pin-b w-full`};
