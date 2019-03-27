@@ -41,7 +41,11 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-l lg:text-xl font-sans pt-10 md:pt-16 text-justify leading-loose`};
+  ${tw`text-grey-light text-sm md:text-sm lg:text-xl font-sans pt-10 md:pt-16 text-justify leading-loose mt-8`};
+`;
+
+const DescLine = styled.p`
+  ${tw`mt-4`};
   opacity: 0.8;
 `;
 
@@ -53,10 +57,11 @@ const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `;
 
+
 export default () => (
   <>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={6}>
       <Hero offset={0}>
         <BigTitle>
           Hello, <br /> I'm Chau Bao Long.
@@ -101,7 +106,7 @@ export default () => (
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
-      <About offset={3}>
+      <About offset={3.5}>
         <Title>More about me</Title>
         <AboutHero>
           <Avatar src={avatar} alt="Chau Bao Long" />
@@ -110,22 +115,21 @@ export default () => (
           </AboutSub>
         </AboutHero>
         <AboutDesc>
-          •  4 years of hands-on experience in Mobile development including Android, React Native and Xamarin.<br />
-          •  3 years of hands-on experience in Web development with Ruby On Rails.<br />
-          •  2 years of hands-on experience in Web Frontend especially SPA with React and other latest trending technologies.<br />
-          •  1 year of experience in DevOps using Ansible, Terraform, Docker, Kubernetes, Helm on the platform like AWS, GCP as well as on-premise servers.<br />
-          •  Strong knowledge in design database and ERD diagram for large scale project.<br />
-          •  Have good knowledge of design patterns and building project using clean architecture (Android, React).<br />
-          •  Fast learning a new language and technique in a couple of days.<br />
-          •  Proficient in Linux and daily use command line.<br />
-          •  Expert in VIM.<br />
-          •  Deep knowledge about networking, protocol at various network layer, firewall and security.<br />
-          •  Ability to build CI/CD system and setup an entire staging environment.<br />
-          •  Ability to fully build a small production environment with load balancing, auto scale and monitor system on AWS and on-premise fleet of servers.<br />
-          •  Experience with serverless technology (AWS lambda, API gateway)<br />
+          <DescLine>•  4 years of hands-on experience in Mobile development including Android, React Native and Xamarin.</DescLine>
+          <DescLine>•  3 years of hands-on experience in Web development with Ruby On Rails.</DescLine>
+          <DescLine>•  2 years of hands-on experience in Web Frontend especially SPA with React and other latest trending technologies.</DescLine>
+          <DescLine>•  1 year of experience in DevOps using Ansible, Terraform, Docker, Kubernetes, Helm on the platform like AWS, GCP as well as on-premise servers.</DescLine>
+          <DescLine>•  Strong knowledge in design database and ERD diagram for large scale project.</DescLine>
+          <DescLine>•  Have good knowledge of design patterns and building project using clean architecture (Android, React).</DescLine>
+          <DescLine>•  Fast learning a new language and technique in a couple of days.</DescLine>
+          <DescLine>•  Proficient in Linux, VIM and daily use command line.</DescLine>
+          <DescLine>•  Deep knowledge about networking, protocol at various network layer, firewall and security.</DescLine>
+          <DescLine>•  Ability to build CI/CD system and setup an entire staging environment.</DescLine>
+          <DescLine>•  Ability to fully build a small production environment with load balancing, auto scale and monitor system on AWS and on-premise fleet of servers.</DescLine>
+          <DescLine>•  Experience with serverless technology (AWS lambda, API gateway)</DescLine>
         </AboutDesc>
       </About>
-      <Contact offset={4}>
+      <Contact offset={5}>
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
