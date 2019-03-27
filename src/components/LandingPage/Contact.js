@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { Divider, Content } from '../common';
 import { UpDown, UpDownWide, waveAnimation } from '../../styles/animations';
 import { colors } from '../../../tailwind';
-import SVG from '../SVG';
+import SVG from './SVG';
 
 const WaveWrapper = styled.div`
   ${tw`absolute pin-b w-full`};

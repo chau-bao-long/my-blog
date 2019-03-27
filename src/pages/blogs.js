@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Bio from '../components/Bio';
-import Layout from '../components/blogLayout';
+import Layout from '../components/Blog/Layout';
 import SEO from '../components/SEO';
 import { rhythm } from '../utils/typography';
 
@@ -15,10 +14,9 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={location} title={siteTitle}>
         <SEO
-          title="All posts"
-          keywords={['blog', 'gatsby', 'javascript', 'react']}
+          title="All blogs"
+          keywords={['blog', 'topcbl', 'longcb', 'longcb blog', 'chau-bao-long', 'chau bao long']}
         />
-        <Bio />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (

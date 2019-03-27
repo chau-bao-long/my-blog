@@ -3,7 +3,7 @@ import React from 'react';
 import { Divider, DividerMiddle, Content, Inner } from '../common';
 import { UpDown, UpDownWide } from '../../styles/animations';
 import { colors } from '../../../tailwind';
-import SVG from '../SVG';
+import SVG from './SVG';
 
 export default ({ children, offset }) => (
   <>

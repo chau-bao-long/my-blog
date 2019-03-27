@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
-import { width as twWidth } from '../../tailwind';
-import { hidden } from '../styles/utils';
+
+import { width as twWidth } from '../../../tailwind';
+import { hidden } from '../../styles/utils';
 
 const Wrapper = styled.svg`
   ${tw`absolute`};

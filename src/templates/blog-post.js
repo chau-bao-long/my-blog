@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Bio from '../components/Bio';
-import Layout from '../components/blogLayout';
+import Bio from '../components/Blog/Bio';
+import Layout from '../components/Blog/Layout';
 import SEO from '../components/SEO';
 import { rhythm, scale } from '../utils/typography';
 

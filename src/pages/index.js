@@ -4,14 +4,13 @@ import tw from 'tailwind.macro';
 import { Parallax } from 'react-spring/renderprops-addons.cjs';
 
 import Layout from '../components/LandingPage/Layout';
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from '../components/LandingPage/ProjectCard';
 import { Title, BigTitle, SubTitle, Inner } from '../components/common';
 import Hero from '../components/LandingPage/Hero';
 import Projects from '../components/LandingPage/Projects';
 import About from '../components/LandingPage/About';
 import Contact from '../components/LandingPage/Contact';
 import ViewBlogButton from '../components/LandingPage/ViewBlogButton';
-
 import avatar from '../styles/images/avatar.jpg';
 
 const ProjectsWrapper = styled.div`
@@ -141,7 +140,7 @@ export default () => (
         <Footer>
           &copy; 2019 by topcbl.{' '}
           <a href="https://github.com/chau-bao-long/my-blog" target="_blank">Github Repository</a>. Thanks to{' '}
-          <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>.
+          <a href="https://github.com/facebook/react" target="_blank">React</a>.
         </Footer>
       </Contact>
     </Parallax>
