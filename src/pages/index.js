@@ -10,6 +10,7 @@ import Hero from '../components/LandingPage/Hero';
 import Projects from '../components/LandingPage/Projects';
 import About from '../components/LandingPage/About';
 import Contact from '../components/LandingPage/Contact';
+import ViewBlogButton from '../components/LandingPage/ViewBlogButton';
 
 import avatar from '../styles/images/avatar.jpg';
 
@@ -40,7 +41,8 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.p`
-  ${tw`text-grey-light text-lg md:text-l lg:text-xl font-sans pt-10 md:pt-16 text-justify`};
+  ${tw`text-grey-light text-lg md:text-l lg:text-xl font-sans pt-10 md:pt-16 text-justify leading-loose`};
+  opacity: 0.8;
 `;
 
 const ContactText = styled.p`
@@ -60,6 +62,7 @@ export default () => (
           Hello, <br /> I'm Chau Bao Long.
         </BigTitle>
         <SubTitle>who's having some fun in coding Mobile App, Web App, DevOps and Cloud Computing.</SubTitle>
+        <ViewBlogButton />
       </Hero>
       <Projects offset={1}>
         <Title>Recent Projects</Title>
