@@ -1,15 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
+import tw from 'tailwind.macro';
 
 const Container = styled.div`
+  ${tw`flex flex-col justify-center items-center`};
   grid-area: header;
 `;
 
 const Title = styled.h1`
+  ${tw`font-semibold text-green-light`};
 `;
 
 const Description = styled.h5`
+  ${tw`tracking-wide`};
 `;
 
 export default () => {

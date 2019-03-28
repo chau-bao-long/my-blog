@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'TOP BLOG',
     author: 'Chau Bao Long',
-    description: 'Log some interesting stuffs in my life',
+    description: 'RECORD INTERESTING STUFFS IN MY LIFE',
     siteUrl: 'http://longcb.cf/',
     social: {
       twitter: 'topcbl',
@@ -10,8 +10,8 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-eslint',
-    'gatsby-plugin-styled-components',
     'gatsby-plugin-antd',
+    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
