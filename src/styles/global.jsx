@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #161719;
+    background-color: #161719 !important;
   }
   a {
     color: #e07628;

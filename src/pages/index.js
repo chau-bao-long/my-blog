@@ -39,7 +39,7 @@ const AboutSub = styled.span`
   ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-xl lg:text-2xl xl:text-3xl`};
 `;
 
-const AboutDesc = styled.p`
+const AboutDesc = styled.span`
   ${tw`text-grey-light text-sm md:text-sm lg:text-xl font-sans pt-10 md:pt-16 text-justify leading-loose mt-8`};
 `;
 

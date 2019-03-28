@@ -10,6 +10,7 @@
   "plugins": [
     "react",
     "jsx-a11y",
+    "react-hooks"
   ],
   "rules": {
     "func-names": ["error", "always", { "generators": "never" }],
@@ -167,6 +168,8 @@
           ]
         }
       }
-    ]
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }

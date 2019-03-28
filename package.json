@@ -1,15 +1,16 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "topcbl-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "topcbl personal blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Chau Bao Long <chau.bao.long.vn@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/chau-bao-long/my-blog/issues"
   },
   "dependencies": {
     "antd": "^3.15.2",
     "babel-plugin-styled-components": "^1.10.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
     "gatsby": "^2.2.5",
     "gatsby-image": "^2.0.34",
     "gatsby-plugin-antd": "^2.0.2",
@@ -54,15 +55,19 @@
     "gatsby-plugin-eslint": "^2.0.4",
     "prettier": "^1.16.4"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/chau-bao-long/my-blog#readme",
   "keywords": [
-    "gatsby"
+    "topcbl",
+    "longcb",
+    "chau-bao-long",
+    "topcbl blog",
+    "longcb blog"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/chau-bao-long/my-blog.git"
   },
   "scripts": {
     "build": "gatsby build",

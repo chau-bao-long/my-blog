@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Top\'s Blog',
+    title: 'TOP BLOG',
     author: 'Chau Bao Long',
-    description: 'My personal blog',
+    description: 'Log some interesting stuffs in my life',
     siteUrl: 'http://longcb.cf/',
     social: {
       twitter: 'topcbl',
