@@ -1209,7 +1209,7 @@ ant-design-palettes@^1.1.3:
   dependencies:
     tinycolor2 "^1.4.1"
 
-antd@^3.15.2, antd@^3.9.0:
+antd@^3.15.2:
   version "3.15.2"
   resolved "https://registry.yarnpkg.com/antd/-/antd-3.15.2.tgz#5692ed9f7db878b1ec9f0cafcb4027b9cb36c32e"
   integrity sha512-yKN6v5j3znt/JFUJ8LFny179medv1ZlyKmQdtVvbOKuQN/VEnIo79fKVzmduacU+QMS/SJDuJ+oXD9zIuodPQQ==
@@ -1616,14 +1616,6 @@ babel-plugin-dynamic-import-node@^1.2.0:
   integrity sha512-yeDwKaLgGdTpXL7RgGt5r6T4LmnTza/hUn5Ul8uZSGGMtEjYo13Nxai7SQaGCTEzUtg9Zq9qJn0EjEr7SeSlTQ==
   dependencies:
     babel-plugin-syntax-dynamic-import "^6.18.0"
-
-babel-plugin-import@^1.9.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-import/-/babel-plugin-import-1.11.0.tgz#78ac908e6b225206babb734e19eae5f78d6d1035"
-  integrity sha512-de9dWdU1YjmWRPYurlHRKD2hTd24z0bIQ0/JgyXqLMXML+TsvEkVhtqzOsNtu9MmCuvwBiTTTjZBbZXA1Xu7TQ==
-  dependencies:
-    "@babel/helper-module-imports" "^7.0.0"
-    "@babel/runtime" "^7.0.0"
 
 babel-plugin-macros@^2.1.0, babel-plugin-macros@^2.4.2:
   version "2.5.0"
@@ -4991,14 +4983,6 @@ gatsby-link@^2.0.16:
     "@babel/runtime" "^7.0.0"
     "@types/reach__router" "^1.0.0"
     prop-types "^15.6.1"
-
-gatsby-plugin-antd@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-antd/-/gatsby-plugin-antd-2.0.2.tgz#009c4c3b20c7250adb2721ceddc85da950bd0b2b"
-  integrity sha512-T3PeEy+G1SIJMogWJ0z2kE6Fp/fxmTgy0fjqylSaEdLIBomc3LG0avXmKzrEU5rx7ZTs84ns/Qx976Dv/7VPlg==
-  dependencies:
-    antd "^3.9.0"
-    babel-plugin-import "^1.9.0"
 
 gatsby-plugin-eslint@^2.0.4:
   version "2.0.4"

@@ -10,7 +10,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-eslint',
-    'gatsby-plugin-antd',
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
