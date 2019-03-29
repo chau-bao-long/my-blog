@@ -5,6 +5,7 @@ import tw from 'tailwind.macro';
 import Image from 'gatsby-image';
 
 import { responsible } from '../../styles/mixins';
+import { color } from '../../styles/theme';
 
 const Container = styled.div`
   ${tw`flex flex-col items-center py-6 rounded-lg`};
@@ -15,17 +16,17 @@ const Container = styled.div`
 
 const DateTime = styled.small`
   ${tw`uppercase mt-8 font-normal text-sm`};
-  color: ${p => p.theme.color.grayText};
+  color: ${color.grayText};
 `;
 
 const Title = styled.h3`
   ${tw`text-2xl font-bold mt-6 mb-6`};
-  color: ${p => p.theme.color.blogTitle};
+  color: ${color.blogTitle};
 `;
 
 const Content = styled.p`
   ${tw`p-12 font-light`};
-  color: ${p => p.theme.color.grayText};
+  color: ${color.grayText};
   font-size: 0.9rem;
 `;
 
@@ -35,17 +36,17 @@ const Cover = styled(Image)`
 
 const Categories = styled.div`
   ${tw`text-sm font-light mb-8`};
-  color: ${p => p.theme.color.category};
+  color: ${color.category};
 `;
 
 const ReadMore = styled(Link)`
   ${tw`border rounded-full py-2 px-6 font-light text-sm mb-6`};
   ${responsible};
-  color: ${p => p.theme.color.grayText};
-  border: 1px solid ${p => p.theme.color.grayText};
+  color: ${color.grayText};
+  border: 1px solid ${color.grayText};
   box-shadow: none;
   &:hover {
-    color: ${p => p.theme.color.grayText};
+    color: ${color.grayText};
   }
 `;
 

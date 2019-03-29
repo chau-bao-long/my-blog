@@ -5,6 +5,7 @@ import Header from './Header';
 import More from './More';
 import SEO from '../SEO';
 import Category from './Category';
+import { color } from '../../styles/theme';
 
 const Layout = styled.div`
   min-height: 100vh;
@@ -16,7 +17,7 @@ const Layout = styled.div`
   "category category"
   "main more";
   transition: all 0.5s ease-out;
-  background: ${p => p.theme.color.blogLayout};
+  background: ${color.blogLayout};
 `;
 
 export default ({ children }) => (

@@ -6,6 +6,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 import { BlogContext } from '../../pages/blogs';
 import { responsible } from '../../styles/mixins';
+import { color } from '../../styles/theme';
 
 const Container = styled.div`
   grid-area: category;
@@ -24,7 +25,7 @@ const Category = styled.p`
   ${responsible};
   ${tw`inline text-sm mx-4 my-auto px-2 py-1 rounded-full hover:text-green-dark hover:font-semibold`};
   ${p => p.selected && css`
-    background: ${p.theme.color.category};
+    background: ${color.category};
     color: white;
   `};
   cursor: pointer;

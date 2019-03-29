@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import tw from 'tailwind.macro';
 import Image from 'gatsby-image';
 
+import { color } from '../../styles/theme';
+
 const Container = styled(Link)`
   ${tw`flex flex-col items-stretch py-6 m-8 rounded-lg`};
   background: white;
@@ -12,7 +14,7 @@ const Container = styled(Link)`
 
 const Title = styled.h3`
   ${tw`text-lg font-medium mt-6 self-start`};
-  color: ${p => p.theme.color.category};
+  color: ${color.category};
 `;
 
 const Cover = styled(Image)`
@@ -21,7 +23,7 @@ const Cover = styled(Image)`
 
 const Content = styled.p`
   ${tw`font-light`};
-  color: ${p => p.theme.color.grayText};
+  color: ${color.grayText};
   font-size: 0.9rem;
 `;
 

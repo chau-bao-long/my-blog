@@ -4,6 +4,8 @@ import { StaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
 import tw from 'tailwind.macro';
 
+import { color } from '../../styles/theme';
+
 const Container = styled.div`
   ${tw`flex flex-col items-center py-6 rounded-lg`};
   background: white;
@@ -23,7 +25,7 @@ const Autobiography = styled.h3`
 const Divider = styled.div`
   ${tw`w-16 h-px`};
   margin: 1rem;
-  background: ${p => p.theme.color.category};
+  background: ${color.category};
 `;
 
 const MoreInfo = styled.p`

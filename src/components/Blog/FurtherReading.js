@@ -4,6 +4,7 @@ import tw from 'tailwind.macro';
 import { graphql, useStaticQuery } from 'gatsby';
 
 import FurtherItem from './FurtherItem';
+import { color } from '../../styles/theme';
 
 const Container = styled.div`
   ${tw`flex flex-col items-center py-6 rounded-lg`};
@@ -18,7 +19,7 @@ const Title = styled.h3`
 const Divider = styled.div`
   ${tw`w-16 h-px`};
   margin-bottom: 1rem;
-  background: ${p => p.theme.color.category};
+  background: ${color.category};
 `;
 
 export default () => {

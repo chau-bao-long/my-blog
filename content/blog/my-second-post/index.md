@@ -2,7 +2,7 @@
 title: My Second Post!
 date: "2015-05-06T23:46:37.121Z"
 cover: cover-default.jpg
-categories: TRAVEL / LIFESTYLE
+categories: "TRAVEL / LIFESTYLE"
 ---
 
 Wow! I love blogging so much already.
