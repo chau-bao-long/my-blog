@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import tw from 'tailwind.macro';
 
 import Bio from './Bio';
+import FurtherReading from './FurtherReading';
 
 const Container = styled.div`
   ${tw`flex flex-col justify-start`};
@@ -12,5 +13,6 @@ const Container = styled.div`
 export default () => (
   <Container>
     <Bio />
+    <FurtherReading />
   </Container>
 );

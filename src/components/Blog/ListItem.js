@@ -38,7 +38,7 @@ const Categories = styled.div`
 `;
 
 const ReadMore = styled(Link)`
-  ${tw`border py-2 px-6 font-light text-sm mb-6`};
+  ${tw`border rounded-full py-2 px-6 font-light text-sm mb-6`};
   ${responsible};
   color: ${p => p.theme.color.grayText};
   border: 1px solid ${p => p.theme.color.grayText};
