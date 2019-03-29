@@ -9,7 +9,8 @@ import { responsible } from '../../styles/mixins';
 const Container = styled.div`
   ${tw`flex flex-col items-center py-6 rounded-lg`};
   background: white;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 3.5rem;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.03);
 `;
 
 const DateTime = styled.small`

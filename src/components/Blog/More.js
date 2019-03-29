@@ -8,6 +8,7 @@ import FurtherReading from './FurtherReading';
 const Container = styled.div`
   ${tw`flex flex-col justify-start`};
   grid-area: more;
+  margin: 3rem 6rem 2rem 0;
 `;
 
 export default () => (

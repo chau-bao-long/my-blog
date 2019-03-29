@@ -8,7 +8,7 @@ const Container = styled.div`
   ${tw`flex flex-col items-center py-6 rounded-lg`};
   background: white;
   margin-bottom: 2rem;
-  margin: 3rem 3rem 0 0;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.03);
 `;
 
 const Avatar = styled(Image)`
@@ -27,7 +27,7 @@ const Divider = styled.div`
 `;
 
 const MoreInfo = styled.p`
-  margin: 0.5rem 3rem;
+  margin: 1rem 3rem 3rem 3rem;
 `;
 
 function Bio() {

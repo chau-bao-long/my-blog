@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.h1`
-  ${tw`font-semibold text-green-light`};
+  ${tw`font-semibold text-purple-dark`};
 `;
 
 const Description = styled.h5`
