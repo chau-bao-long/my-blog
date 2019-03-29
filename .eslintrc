@@ -13,6 +13,8 @@
     "react-hooks"
   ],
   "rules": {
+    "no-debugger": "warn",
+    "semi": "warn",
     "func-names": ["error", "always", { "generators": "never" }],
     "arrow-body-style": [
       "warn",
@@ -53,7 +55,7 @@
     "no-plusplus": "off",
     "no-restricted-globals": ["error", "fdescribe", "fit"],
     "no-restricted-syntax": [
-      "error",
+      "warn",
       "DebuggerStatement",
       "LabeledStatement",
       "WithStatement"

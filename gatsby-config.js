@@ -7,6 +7,9 @@ module.exports = {
     social: {
       twitter: 'topcbl',
     },
+    categories: [
+      'ALL', 'TECHNOLOGY', 'TRAVEL', 'POLITICS', 'LIFESTYLE'
+    ],
   },
   plugins: [
     'gatsby-plugin-eslint',
