@@ -8,7 +8,8 @@ import { responsible } from '../../styles/mixins';
 import { color } from '../../styles/theme';
 
 const Container = styled.div`
-  ${tw`flex flex-col items-center py-6 rounded-lg`};
+  ${tw`flex flex-col items-center p-6 rounded-lg`};
+  margin: 3rem;
   background: white;
   margin: 0 0 2rem 3.5rem;
   box-shadow: 0px 1px 1px rgba(0,0,0,0.03);
@@ -39,14 +40,16 @@ const Categories = styled.div`
   color: ${color.category};
 `;
 
-const ReadMore = styled(Link)`
+const ReadMoreBtn = styled(Link)`
   ${tw`border rounded-full py-2 px-6 font-light text-sm mb-6`};
   ${responsible};
   color: ${color.grayText};
   border: 1px solid ${color.grayText};
   box-shadow: none;
   &:hover {
-    color: ${color.grayText};
+    color: white;
+    background: ${color.category};
+    border: 1px solid ${color.category};
   }
 `;
 
@@ -66,7 +69,7 @@ export default ({ node, covers }) => {
           __html: node.frontmatter.description || node.excerpt,
         }}
       />
-      <ReadMore to={node.fields.slug}>READ MORE</ReadMore>
+      <ReadMoreBtn to={node.fields.slug}>READ MORE</ReadMoreBtn>
     </Container>
   );
 };

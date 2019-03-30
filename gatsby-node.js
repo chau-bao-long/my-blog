@@ -19,6 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
+                cover
               }
             }
           }
@@ -42,6 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
         component: blogPost,
         context: {
           slug: post.node.fields.slug,
+          cover: post.node.frontmatter.cover,
           previous,
           next,
         },
