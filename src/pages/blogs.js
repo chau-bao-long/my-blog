@@ -4,17 +4,14 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '../styles/theme';
 import Layout from '../components/Blog/Layout';
 import Main from '../components/Blog/Main';
+import { provideContext } from '../components/Blog/hooks/blogProvider';
 
-export const BlogContext = React.createContext({ pickedCategories: [] });
-
-const defaultValue = { pickedCategories: [1] };
-
-export default () => (
+const Blog = () => (
   <ThemeProvider theme={theme}>
-    <BlogContext.Provider value={defaultValue}>
-      <Layout>
-        <Main />
-      </Layout>
-    </BlogContext.Provider>
+    <Layout>
+      <Main />
+    </Layout>
   </ThemeProvider>
 );
+
+export default provideContext(Blog);

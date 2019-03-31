@@ -1,11 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useCallback } from 'react';
 import styled, { css } from 'styled-components';
 import { Divider } from 'antd';
 import tw from 'tailwind.macro';
 import { graphql, useStaticQuery } from 'gatsby';
 
-import { BlogContext } from '../../pages/blogs';
-import { responsible } from '../../styles/mixins';
+import useBlogState from './hooks/useBlogState';
 import { color } from '../../styles/theme';
 
 const Container = styled.div`
@@ -22,25 +21,37 @@ const CategoryGroup = styled.span`
 `;
 
 const Category = styled.p`
-  ${responsible};
   ${tw`inline text-sm mx-4 my-auto px-2 py-1 rounded-full hover:text-green-dark hover:font-semibold`};
+  &:hover {
+    color: ${color.category};
+  }
   ${p => p.selected && css`
     background: ${color.category};
     color: white;
+    &:hover {
+      color: white;
+    }
   `};
   cursor: pointer;
 `;
 
 export default () => {
   const { site: { siteMetadata: { categories } } } = useStaticQuery(query);
-  const { pickedCategories } = useContext(BlogContext);
+  const [{ pickedId }, setCategory] = useBlogState('categories', 'setCategory');
+  const handleCategoryClick = useCallback(i => setCategory(i), [setCategory]);
   return (
     <Container>
       <HorizontalLine />
       <CategoryGroup>
         {
           categories.map((cat, i) => (
-            <Category key={i} selected={pickedCategories.includes(i)}>{cat}</Category>
+            <Category
+              key={i}
+              selected={pickedId === i}
+              onClick={() => handleCategoryClick(i)}
+            >
+              {cat}
+            </Category>
           ))
         }
       </CategoryGroup>
