@@ -19,7 +19,7 @@ const Avatar = styled(Image)`
 `;
 
 const Autobiography = styled.h3`
-  ${tw`font-bold text-lg p-4`};
+  ${tw`font-bold text-lg py-4 px-8 text-center leading-normal`};
 `;
 
 const Divider = styled.div`

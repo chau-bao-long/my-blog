@@ -58,11 +58,11 @@ export const postQuery = graphql`
         }
       }
     }
-    coverFiles: allFile(filter: {absolutePath: {regex: "/cover-(.)+.jpg/"}}) {
+    coverFiles: allFile(filter: {absolutePath: {regex: "/cover-(.)+.(jpg|png)/"}}) {
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 700, quality: 100) {
+            fluid(maxWidth: 1000, quality: 100) {
               ...GatsbyImageSharpFluid,
               originalName
             }

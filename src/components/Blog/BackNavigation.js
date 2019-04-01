@@ -16,9 +16,9 @@ const HorizontalLine = styled(Divider)`
 `;
 
 const BackButton = styled(Link)`
+  ${tw`ml-6 lg:ml-8 lg:pl-0 xl:pl-16 my-3 font-bold`};
   color: ${color.category};
   box-shadow: none;
-  margin-left: 6rem;
   &:hover {
     color: ${color.grayText};
   }
@@ -28,7 +28,7 @@ export default () => (
   <Container>
     <HorizontalLine />
     <BackButton to="/blogs">
-      ← GO BACK
+      ← BACK TO BLOG LIST
     </BackButton>
     <HorizontalLine />
   </Container>

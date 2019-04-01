@@ -9,19 +9,19 @@ import { color } from '../../styles/theme';
 
 const Container = styled.div`
   grid-area: category;
-  ${tw`flex flex-col justify-between items-stretch`};
+  ${tw`flex flex-col justify-start items-stretch w-full`};
 `;
 
 const HorizontalLine = styled(Divider)`
-  ${tw`my-auto`};
+  ${tw`my-0`};
 `;
 
 const CategoryGroup = styled.span`
-  ${tw`flex flex-row justify-center m-auto`};
+  ${tw`flex flex-row flex-wrap justify-center my-1 w-full p-2`};
 `;
 
 const Category = styled.p`
-  ${tw`inline text-sm mx-4 my-auto px-2 py-1 rounded-full hover:text-green-dark hover:font-semibold`};
+  ${tw`inline text-sm mx-4 my-auto px-2 py-1 rounded-full hover:text-green-dark`};
   &:hover {
     color: ${color.category};
   }

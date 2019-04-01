@@ -16,11 +16,8 @@ export const breakpoint = {
   lg: (...args) => css`
     @media (min-width: 1200px) { ${css(...args)} }
   `,
-  max1300: (...args) => css`
-    @media (max-width: 1370px) { ${css(...args)} }
-  `,
-  max1400: (...args) => css`
-    @media (max-width: 1400px) { ${css(...args)} }
+  xl: (...args) => css`
+    @media (min-width: 1370px) { ${css(...args)} }
   `,
 };
 

@@ -5,11 +5,12 @@ import tw from 'tailwind.macro';
 import Image from 'gatsby-image';
 
 import { color } from '../../styles/theme';
-import { responsible } from '../../styles/mixins';
+import { responsible, breakpoint } from '../../styles/mixins';
 
 const Container = styled.div`
   grid-area: main;
   ${tw`flex flex-col items-center py-6 rounded-lg`};
+  ${breakpoint.md`${tw`mx-6 my-8`}`}
   background: white;
   margin: 3rem 2rem 1rem 6rem;
   box-shadow: 0px 1px 1px rgba(0,0,0,0.03);
@@ -26,12 +27,15 @@ const Time = styled.p`
 `;
 
 const Title = styled.h1`
-  ${tw`text-3xl font-bold mt-3 mb-6`};
+  ${tw`text-3xl font-bold mt-3 mb-6 text-center p-3`};
   color: ${color.blogTitle};
 `;
 
 const Content = styled.div`
-  ${tw`p-16 font-light`};
+  ${tw`p-16 font-light w-full`};
+  ${breakpoint.md`max-width: 45rem;`}
+  ${breakpoint.lg`max-width: 50rem;`}
+  ${breakpoint.xl`max-width: 60rem;`}
   color: ${color.grayText};
   font-size: 0.9rem;
 `;

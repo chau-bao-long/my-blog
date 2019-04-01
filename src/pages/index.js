@@ -105,7 +105,7 @@ export default () => (
           </ProjectCard>
         </ProjectsWrapper>
       </Projects>
-      <About offset={3.5}>
+      <About offset={3.8}>
         <Title>More about me</Title>
         <AboutHero>
           <Avatar src={avatar} alt="Chau Bao Long" />

@@ -13,7 +13,7 @@ const Title = styled.h1`
 `;
 
 const Description = styled.h5`
-  ${tw`tracking-wide`};
+  ${tw`tracking-wide mx-3 text-center`};
 `;
 
 export default () => {

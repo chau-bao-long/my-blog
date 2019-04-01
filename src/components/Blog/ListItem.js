@@ -4,12 +4,13 @@ import { Link } from 'gatsby';
 import tw from 'tailwind.macro';
 import Image from 'gatsby-image';
 
-import { responsible } from '../../styles/mixins';
+import { responsible, breakpoint } from '../../styles/mixins';
 import { color } from '../../styles/theme';
 
 const Container = styled.div`
-  ${tw`flex flex-col items-center p-6 rounded-lg`};
-  margin: 3rem;
+  ${tw`flex flex-col items-center py-6 rounded-lg m-12`};
+  ${breakpoint.sm`${tw`m-3`}`}
+  ${breakpoint.md`${tw`ml-3 mb-6`}`}
   background: white;
   margin: 0 0 2rem 3.5rem;
   box-shadow: 0px 1px 1px rgba(0,0,0,0.03);
@@ -21,12 +22,12 @@ const DateTime = styled.small`
 `;
 
 const Title = styled.h3`
-  ${tw`text-2xl font-bold mt-6 mb-6`};
+  ${tw`text-2xl font-bold mt-6 mb-6 px-3 text-center`};
   color: ${color.blogTitle};
 `;
 
 const Content = styled.p`
-  ${tw`p-12 font-light`};
+  ${tw`font-light p-3 sm:p-8 md:p-12`};
   color: ${color.grayText};
   font-size: 0.9rem;
 `;

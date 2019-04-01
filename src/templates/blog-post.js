@@ -8,6 +8,7 @@ import Detail from '../components/Blog/Detail';
 import Comment from '../components/Blog/Comment';
 
 const Container = styled.div`
+  grid-area: main;
   ${tw`flex flex-col justify-start`};
 `;
 
@@ -24,7 +25,7 @@ class BlogPostTemplate extends React.Component {
       },
     } = this.props;
     return (
-      <Layout isInDetails>
+      <Layout detail>
         <Container>
           <Detail post={post} cover={cover} previous={previous} next={next} />
           <Comment />
@@ -51,7 +52,7 @@ export const pageQuery = graphql`
     }
     cover: file(relativePath: {eq: $cover}) {
       childImageSharp {
-        fluid(maxWidth: 700, quality: 100) {
+        fluid(maxWidth: 1000, quality: 100) {
           ...GatsbyImageSharpFluid,
           originalName
         }

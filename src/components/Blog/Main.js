@@ -5,9 +5,12 @@ import tw from 'tailwind.macro';
 
 import ListItem from './ListItem';
 import useCategoryFilter from './hooks/useCategoryFilter';
+import { breakpoint } from '../../styles/mixins';
 
 const Container = styled.div`
-  ${tw`py-12 px-16`};
+  ${tw`py-12 px-16 sm:px-6`};
+  ${breakpoint.xxs`${tw`px-1`}`}
+  ${breakpoint.xl`${tw`pl-32`}`}
   grid-area: main;
 `;
 
@@ -46,11 +49,11 @@ export const postQuery = graphql`
         }
       }
     }
-    coverFiles: allFile(filter: {absolutePath: {regex: "/cover-(.)+.jpg/"}}) {
+    coverFiles: allFile(filter: {absolutePath: {regex: "/cover-(.)+.(jpg|png)/"}}) {
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 700, quality: 100) {
+            fluid(maxWidth: 1000, quality: 100) {
               ...GatsbyImageSharpFluid,
               originalName
             }
