@@ -8,7 +8,7 @@ module.exports = {
       twitter: 'topcbl',
     },
     categories: [
-      'ALL', 'TECHNOLOGY', 'TRAVEL', 'POLITICS', 'LIFESTYLE'
+      'ALL', 'TECHNOLOGY', 'TRAVEL', 'POLITICS', 'LIFESTYLE',
     ],
   },
   plugins: [

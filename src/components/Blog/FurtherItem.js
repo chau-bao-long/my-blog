@@ -33,7 +33,7 @@ export default ({ node, covers }) => {
     c.node.childImageSharp.fluid.originalName === node.frontmatter.cover
   ));
   return (
-    <Container key={node.fields.slug}>
+    <Container key={node.fields.slug} to={node.fields.slug}>
       { cover && <Cover fluid={cover.node.childImageSharp.fluid} /> }
       <Title>{title}</Title>
       <Content

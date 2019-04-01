@@ -4,6 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import tw from 'tailwind.macro';
 
 import ListItem from './ListItem';
+import useCategoryFilter from './hooks/useCategoryFilter';
 
 const Container = styled.div`
   ${tw`py-12 px-16`};
@@ -14,10 +15,11 @@ export default () => {
   const {
     coverFiles: { edges: covers }, allMarkdownRemark: { edges: posts },
   } = useStaticQuery(postQuery);
+  const filteredPosts = useCategoryFilter(posts);
   return (
     <Container>
       {
-        posts.map(({ node }) => (
+        filteredPosts.map(({ node }) => (
           <ListItem key={node.frontmatter.date} node={node} covers={covers} />
         ))
       }

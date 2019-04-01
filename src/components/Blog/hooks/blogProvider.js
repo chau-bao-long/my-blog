@@ -7,7 +7,7 @@ export const BlogContext = React.createContext({ categories: {} });
 
 const initialState = { categories: { pickedId: 0 } };
 
-export const provideContext =  WrappedComponent => props => {
+export const provideContext = WrappedComponent => props => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <BlogContext.Provider value={{ state, actions: actions(dispatch) }}>
