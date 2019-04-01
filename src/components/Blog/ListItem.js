@@ -70,7 +70,7 @@ export default ({ node, covers }) => {
           __html: node.frontmatter.description || node.excerpt,
         }}
       />
-      <ReadMoreBtn to={node.fields.slug}>READ MORE</ReadMoreBtn>
+      <ReadMoreBtn to={`blogs${node.fields.slug}`}>READ MORE</ReadMoreBtn>
     </Container>
   );
 };

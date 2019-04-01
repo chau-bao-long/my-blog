@@ -40,7 +40,7 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.span`
-  ${tw`block text-grey-light text-sm md:text-sm lg:text-xl font-sans pt-10 md:pt-16 text-justify leading-loose mt-10 px-12`};
+  ${tw`block text-grey-light text-sm md:text-sm lg:text-xl font-sans pt-10 md:pt-16 text-justify leading-loose mt-10 px-4 md:px-8 lg:px-12`};
 `;
 
 const DescLine = styled.p`

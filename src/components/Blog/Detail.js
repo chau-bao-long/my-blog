@@ -27,15 +27,18 @@ const Time = styled.p`
 `;
 
 const Title = styled.h1`
-  ${tw`text-3xl font-bold mt-3 mb-6 text-center p-3`};
+  ${tw`text-3xl font-bold mt-3 mb-6 text-center py-3 px-6`};
   color: ${color.blogTitle};
 `;
 
 const Content = styled.div`
-  ${tw`p-16 font-light w-full`};
-  ${breakpoint.md`max-width: 45rem;`}
-  ${breakpoint.lg`max-width: 50rem;`}
+  ${tw`font-light w-full`};
   ${breakpoint.xl`max-width: 60rem;`}
+  ${breakpoint.lg`max-width: 50rem; padding: 3rem;`}
+  ${breakpoint.md`max-width: 45rem; padding: 2.5rem;`}
+  ${breakpoint.sm`max-width: 50rem; padding: 2rem;`}
+  ${breakpoint.xs`padding: 2rem;`}
+  ${breakpoint.xxs`padding: 1rem;`}
   color: ${color.grayText};
   font-size: 0.9rem;
 `;
@@ -51,7 +54,7 @@ const List = styled.ul`
 `;
 
 const buttonStyle = css`
-  ${tw`border rounded-full font-light text-sm mb-6 py-2`};
+  ${tw`border rounded-full font-light text-sm mb-6 py-2 sm:px-6 md:px-2 text-center`};
   ${responsible};
   color: ${color.grayText};
   border: 1px solid ${color.grayText};
@@ -93,7 +96,7 @@ export default ({ post, cover, previous, next }) => (
       {
         previous && (
           <PrevBlog>
-            <BlogLink to={previous.fields.slug} rel="prev">
+            <BlogLink to={`blogs${previous.fields.slug}`} rel="prev">
               ←
               {' '}
               {previous.frontmatter.title}
@@ -104,7 +107,7 @@ export default ({ post, cover, previous, next }) => (
       {
         next && (
           <NextBlog>
-            <BlogLink to={next.fields.slug} rel="next">
+            <BlogLink to={`blogs${next.fields.slug}`} rel="next">
               {next.frontmatter.title}
               {' '}
               →
