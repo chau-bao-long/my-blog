@@ -24,7 +24,7 @@ class BlogPostTemplate extends React.Component {
       },
     } = this.props;
     return (
-      <Layout>
+      <Layout isInDetails>
         <Container>
           <Detail post={post} cover={cover} previous={previous} next={next} />
           <Comment />

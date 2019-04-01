@@ -6,8 +6,9 @@ import More from './More';
 import SEO from '../SEO';
 import Category from './Category';
 import { color } from '../../styles/theme';
+import BackNavigation from './BackNavigation';
 
-const Layout = styled.div`
+const Container = styled.div`
   min-height: 100vh;
   display: grid;
   grid-template-rows: 160px 50px auto;
@@ -20,15 +21,21 @@ const Layout = styled.div`
   background: ${color.blogLayout};
 `;
 
-export default ({ children }) => (
-  <Layout>
+const Layout = ({ children, isInDetails }) => (
+  <Container>
     <SEO
       title="Chau Bao Long"
       keywords={['blog', 'topcbl', 'longcb', 'longcb blog', 'chau-bao-long', 'chau bao long']}
     />
     <Header />
-    <Category />
+    { isInDetails ? <BackNavigation /> : <Category /> }
     {children}
     <More />
-  </Layout>
+  </Container>
 );
+
+Layout.defaultProps = {
+  isInDetails: false,
+};
+
+export default Layout;
