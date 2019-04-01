@@ -37,7 +37,7 @@ const Category = styled.p`
 
 export default () => {
   const { site: { siteMetadata: { categories } } } = useStaticQuery(query);
-  const [{ pickedId }, setCategory] = useBlogState('categories', 'setCategory');
+  const [state, setCategory] = useBlogState('categories', 'setCategory');
   const handleCategoryClick = useCallback(i => setCategory(i), [setCategory]);
   return (
     <Container>
@@ -47,7 +47,7 @@ export default () => {
           categories.map((cat, i) => (
             <Category
               key={i}
-              selected={pickedId === i}
+              selected={state && state.pickedId === i}
               onClick={() => handleCategoryClick(i)}
             >
               {cat}

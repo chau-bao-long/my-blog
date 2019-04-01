@@ -4,6 +4,8 @@ import tw from 'tailwind.macro';
 import { Link } from 'gatsby';
 import { Divider } from 'antd';
 
+import { color } from '../../styles/theme';
+
 const Container = styled.div`
   grid-area: category;
   ${tw`flex flex-col justify-between items-stretch`};
@@ -14,11 +16,11 @@ const HorizontalLine = styled(Divider)`
 `;
 
 const BackButton = styled(Link)`
-  color: ${p => p.theme.color.category};
+  color: ${color.category};
   box-shadow: none;
   margin-left: 6rem;
   &:hover {
-    color: ${p => p.theme.color.grayText};
+    color: ${color.grayText};
   }
 `;
 
