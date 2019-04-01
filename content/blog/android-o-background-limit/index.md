@@ -1,6 +1,6 @@
 ---
 title: How to deal with background execution limits on Android O
-date: "2017-08-25T22:12:03.284Z"
+date: "2017-08-25T23:46:37.121Z"
 cover: cover-android-o.jpg
 categories: "TECHNOLOGY / ANDROID"
 ---
