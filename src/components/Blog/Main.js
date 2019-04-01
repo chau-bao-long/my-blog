@@ -43,7 +43,9 @@ export const postQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
-            cover
+            cover {
+              base
+            }
             categories
           }
         }

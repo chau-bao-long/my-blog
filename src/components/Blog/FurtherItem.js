@@ -30,7 +30,7 @@ const Content = styled.p`
 export default ({ node, covers }) => {
   const title = node.frontmatter.title || node.fields.slug;
   const cover = covers.find(c => (
-    c.node.childImageSharp.fluid.originalName === node.frontmatter.cover
+    c.node.childImageSharp.fluid.originalName === node.frontmatter.cover.base
   ));
   return (
     <Container key={node.fields.slug} to={node.fields.slug}>
