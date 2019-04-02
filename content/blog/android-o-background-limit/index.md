@@ -4,7 +4,6 @@ date: "2017-08-25T23:46:37.121Z"
 cover: cover-android-o.jpg
 categories: "TECHNOLOGY / ANDROID"
 ---
-
 ![](./cover-android-o.jpg)
 As we are expecting about new Android version - Android O, on August 22nd, Google offically launch Android O what we known as Android Oreo, my favorite cookie by the way haha. So, I decided to write this post to discuss about one of the most important change - the background service mechanism. 
 Before Oreo, everytime and go to the coffee shop to meet up with some iOS friends, they complain that background job is freaking hard on iOS, I laughed at their faces because of how easy Android background job is. But, every easy things came with their disadvantages, background service is also the biggest problem in Android, which makes the phone drain battery so fcking hard. Now, the time has come, Google made up themselves and force Android developers communities to "serve" the end-users, brings end-user a better experiences.
@@ -81,3 +80,4 @@ mJobBuilder.setTrigger(
     - You can register/unregister in Activity/Fragment by yourself without write it in Manifest. Usually, It's should be sit in onResume/onPause in the lifecycle 
 
 Ok that's it. I appreciate this changes of Android on Oreo version. This would be a big step that Google have made to Android community as well as end-user who don't own a powerful hardware. This step would brings Android performance closer to iOS and It worth the effort of developers who spend hours to migration their app to targets android O.
+
