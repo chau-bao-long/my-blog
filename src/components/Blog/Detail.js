@@ -33,12 +33,12 @@ const Title = styled.h1`
 
 const Content = styled.div`
   ${tw`font-light w-full`};
-  ${breakpoint.xl`max-width: 60rem;`}
   ${breakpoint.lg`max-width: 50rem; padding: 3rem;`}
+  ${breakpoint.xl`max-width: 55rem; padding: 3rem`}
   ${breakpoint.md`max-width: 45rem; padding: 2.5rem;`}
-  ${breakpoint.sm`max-width: 50rem; padding: 2rem;`}
-  ${breakpoint.xs`padding: 2rem;`}
-  ${breakpoint.xxs`padding: 1rem;`}
+  ${breakpoint.sm`max-width: 45rem; padding: 2.5rem;`}
+  ${breakpoint.xs`padding: 2.5rem;`}
+  ${breakpoint.xxs`padding: 1.5rem;`}
   color: ${color.grayText};
   font-size: 0.9rem;
 `;
