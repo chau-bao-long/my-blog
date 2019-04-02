@@ -4,6 +4,7 @@ date: "2017-02-28T23:46:37.121Z"
 cover: cover-android-databinding.png
 categories: "TECHNOLOGY / ANDROID"
 ---
+
 This post isn't for who want to learn how to use Android data-binding or getting to know the basis concept. I suggest you go directly to [Google Documentation](https://developer.android.com/topic/libraries/data-binding/index.html) as a great starting point, which helps you integrate data-binding easily, a number of example code as well as other cool stuffs you can achieve when decided to apply it for your project. After having some experiences with data-binding, you guys may curious about what happen under the hood, how Google make tradditional XML files are able to combine with data-binding, how can xml interact with java code, and how its compiler give us the magic. This topic intent to expose a big picture about data-binding mechanism, and a deeply look into what happen underlying. So, developers will have a deeper understand which help them use data-binding in the right way, take advantage of data-binding power to build the great app. 
 
 

@@ -6,6 +6,7 @@ Có thể kể ngay ra đó là dùng thuật toán để map 1 data với size 
 cover: cover-android-hashmap.png
 categories: TECHNOLOGY / ANDROID
 ---
+
 ### Hash ở đâu
 
 Ngày nay, Hash đã và đang được ứng dụng khắp mọi nơi.
@@ -22,7 +23,7 @@ Ngày nay, Hash đã và đang được ứng dụng khắp mọi nơi.
 Vậy thì lợi ích của việc sử dụng Hashing là gì mà khiến nó lại được ứng dụng rộng rãi như vậy.
 Có thể kể ngay ra đó là dùng thuật toán để map 1 data với size tùy ý thành 1 chuỗi với size cố định. Đây là one-way function nên không thể cách nào dịch ngược từ mã Hash ra lại data ban đầu được. Cho nên 1 trong nhưng ứng dụng của nó là để che đi password. Sơ đồ dưới đây là mô tả rõ hơn về điều này
 
-![375px-Cryptographic_Hash_Function.svg.png](./android-hash-function.png)
+![375px-Cryptographic_Hash_Function.svg.png](./android-hash-function-1.png)
 
 Còn trong láº­p trình, Hash được xem như 1 cách đánh index để tìm trong mảng nhanh hơn. Giả sử chúng ta có 1 list với N phần tử, thì việc get 1 phần tử trong `List` sẽ có độ phức tạp O(n) vì phải loop từ đầu đến cuối mảng, còn với `HashMap` việc tìm kiếm trong mảng chỉ mất O(1) trong điều kiện tốt. Việc này cũng tương tự như việc tra cứu từ tiếng Anh nào đó trong từ điển, giả sử bạn muốn tìm từ LOVE, thay vì lật từng trang sách từ đầu đến cuối, bạn sẽ nhảy ngay đến vùng ước lượng của chữ L, rồi trong đó tới vùng của chữ O, rồi V... và tìm ngay ra được giải thích định nghĩa cho từ LOVE. Tư tưởng này hoàn toàn tương tự trong Hash. Ứng dụng vào các trang mạng xã hội, với hàng triệu người dùng với hàng tỷ data, việc dùng `HashTag` sẽ giúp chúng ta truy xuất ra ngay được những data có Hash tương ứng chỉ trong vài giây. Anh TrungX đã có 1 post tuyệt hay về cái này, mình xin trích dẫn tại đây
 

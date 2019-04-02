@@ -4,6 +4,7 @@ date: "2016-09-21T18:12:03.284Z"
 cover: cover-android-view-system.png
 categories: "TECHNOLOGY / ANDROID"
 ---
+
 ### Lời nói đầu
 
 Đây là bài đầu tiên trong series bài viết Under The Hood. Mục đích của series này là dive deeper vào các những thứ anh em dev thường dùng trong Android Framework: View, RecyclerView, AsyncTask, Activity,... cũng như là các library nổi tiếng không thể thiếu như: Retrofit, Picasso, Dagger, Butterknife,... Việc đọc code của những dev thần thánh đến từ Google hay Square đầu tiên sẽ giúp chúng ta hiểu hơn về  những library, framework chúng ta sử dụng hằng ngày, hiểu sâu hơn thì sẽ dùng chúng hiệu quả hơn, xa nữa là contribute vào đó để fix 1 issue nào đó chúng ta phát hiện ra trong lúc code, hay để thêm vào 1 tính năng mới vào library, framework mà ta nghĩ là hay.

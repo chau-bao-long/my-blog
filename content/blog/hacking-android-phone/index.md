@@ -4,6 +4,7 @@ date: "2017-07-25T18:12:03.284Z"
 cover: cover-hacking-android.png
 categories: "TECHNOLOGY / ANDROID"
 ---
+
 When you are an Android developer, It's totally normal if you don't know how an android phone was built, what is bootloader or how to root an device. We mainly focus on the application layer, where we can use Android Framework to build great apps, publish to google play store and make money. The underlying layer like core library or kernel are stuffs that Google and vendors will take care for us. In my opinions, there is nothing wrong to you guys who spent most of the time on application layer, but there is something really interesting down there:
 
 - the flash memory with millions of transitor that helps us stores gigabyte of data

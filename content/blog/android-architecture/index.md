@@ -4,13 +4,14 @@ date: "2016-10-25T23:46:37.121Z"
 cover: cover-android-architecture.png
 categories: "TECHNOLOGY / ANDROID"
 ---
+
 I intent to write this post when Google has just released the new Android Nougat with a ton of cool stuff coming out. Since then, many things have also changed. Android architecture is one of them which we will discuss in this post right now.
 
 ### Which architecture have you been using ?
 
 Look back at the past! At the first time I came to Android world, I started to write my first project using android framework. Everything that I need to do is MAKE IT RUN - project manager as well as customer don't care about what I wrote, the only thing I had to do is make the appplication features work well. And, my boss gave me a compliment no matter how many Sh!t I threw to the source code. But at that moment, I thought my code is beautiful and has good structure. The code looks like this
 
-![Screenshot from 2016-10-25 09-29-17.png](./android-folder-structure.png)
+![Screenshot from 2016-10-25 09-29-17.png](./android-folder-structure-1.png)
 
 * I put api stuff in a separated folder which take care of api calling
 * models as its name is a kind of entity.

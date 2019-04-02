@@ -4,6 +4,7 @@ date: "2017-03-28T18:12:03.284Z"
 cover: cover-android-with-rxjava.png
 categories: "TECHNOLOGY / ANDROID"
 ---
+
 RxJava isn't something new in Android. RxJava came and changed how we code because of its great benefits. I do believe that whole of Android developers have to deal too much with stuffs like callback, switch thread, handle error, cancel process,... instead of focus on app business, developers waste so many time on repeatly things to adapt with Android framework. I still remember the days before RxJava, we jump to background through AsyncTask do to a network call while UI keeps the callback to get ready for any network response. Ussually, Many APIs get called at same time, some of them get errors, some of them success, the Callback tend to heavy and our Activity just looks like a mess. And you know, Multithread along with share data between thread is the things that make Android developer life become harder, most of crashes happen here, unexpected result comes out with no good explaination. And even debug now is a challenge, because you know, breakpoint would stop a thread while the others still running and It's easy drive them crazy. So, that's the reason why RxJava show up and save developer life.
 
 First of all, you guys may curious about what does "Rx" in RxJava means and why people name it like that. Rx is "reactive", reactive programming style is like sitting among different things and react to the changing of data. 

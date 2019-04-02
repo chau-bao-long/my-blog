@@ -4,6 +4,7 @@ date: "2018-02-02T18:12:03.284Z"
 cover: cover-api-doc-guideline.png
 categories: "TECHNOLOGY / BACKEND"
 ---
+
 Nhiệm vụ của Backend team khi làm API không chỉ là việc viết code, mà còn là viết documentation cho API đó, sao cho những người sử dụng API (Frontend team, Mobile team, ...) thuận tiện, nhanh chóng và chính xác nhất. 
  
  Trong đó có 3 format để viết API documentation phổ biến và được ưa chuộng là: 
