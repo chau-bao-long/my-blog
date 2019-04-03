@@ -11,6 +11,7 @@ const Button = styled(Link)`
   border-radius: 3em;
   color: black;
   padding: 16px 30px;
+  margin-top: 16px;
   font-size: 1.2rem;
   font-weight: 600;
   &:hover {

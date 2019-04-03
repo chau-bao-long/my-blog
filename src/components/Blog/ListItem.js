@@ -11,6 +11,7 @@ const Container = styled.div`
   ${tw`flex flex-col items-center py-6 rounded-lg m-12`};
   ${breakpoint.sm`${tw`m-3`}`}
   ${breakpoint.md`${tw`ml-3 mb-6`}`}
+  ${breakpoint.xxs`${tw`mx-0`}`}
   background: white;
   margin: 0 0 2rem 3.5rem;
   box-shadow: 0px 1px 1px rgba(0,0,0,0.03);

@@ -9,10 +9,10 @@ import { breakpoint } from '../../styles/mixins';
 const Container = styled.div`
   ${tw`flex flex-col justify-start`};
   ${breakpoint.sm`${tw`hidden`}`};
-  ${breakpoint.md`${tw`mr-8 ml-2 mt-8`}`};
-  ${breakpoint.xl`${tw`mr-8 ml-2 mt-8 pr-32 pt-4`}`};
+  ${breakpoint.md`${tw`pr-8 pl-2 pt-12`}`};
+  ${breakpoint.lg`${tw`pt-12 pr-12`}`};
+  ${breakpoint.xl`${tw`pl-2 pr-32 pt-12`}`};
   grid-area: more;
-  margin: 3rem 6rem 2rem 0;
 `;
 
 export default () => (

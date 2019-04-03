@@ -40,7 +40,7 @@ const AboutSub = styled.span`
 `;
 
 const AboutDesc = styled.span`
-  ${tw`block text-grey-light text-sm md:text-sm lg:text-xl font-sans pt-10 md:pt-16 text-justify leading-loose mt-10 px-4 md:px-8 lg:px-12`};
+  ${tw`block text-grey-light text-sm md:text-sm lg:text-xl font-sans pt-10 md:pt-16 text-justify leading-loose mt-10 px-0 md:px-6 lg:px-12`};
 `;
 
 const DescLine = styled.p`
@@ -65,7 +65,7 @@ export default () => (
         <BigTitle>
           Hello, <br /> I'm Chau Bao Long.
         </BigTitle>
-        <SubTitle>who's having some fun in coding Mobile App, Web App, DevOps and Cloud Computing.</SubTitle>
+        <SubTitle>Leading a sedentary life around things like Mobile App, Web App, DevOps and Cloud Computing, etc.</SubTitle>
         <ViewBlogButton />
       </Hero>
       <Projects offset={1}>

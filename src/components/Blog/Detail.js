@@ -11,6 +11,7 @@ const Container = styled.div`
   grid-area: main;
   ${tw`flex flex-col items-center py-6 rounded-lg`};
   ${breakpoint.md`${tw`mx-6 my-8`}`}
+  ${breakpoint.xxs`${tw`mx-0 my-6`}`}
   background: white;
   margin: 3rem 2rem 1rem 6rem;
   box-shadow: 0px 1px 1px rgba(0,0,0,0.03);

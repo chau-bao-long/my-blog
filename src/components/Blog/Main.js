@@ -9,7 +9,7 @@ import { breakpoint } from '../../styles/mixins';
 
 const Container = styled.div`
   ${tw`py-12 px-16 sm:px-6`};
-  ${breakpoint.xxs`${tw`px-1`}`}
+  ${breakpoint.xxs`${tw`px-0`}`}
   ${breakpoint.xl`${tw`pl-32`}`}
   grid-area: main;
 `;
