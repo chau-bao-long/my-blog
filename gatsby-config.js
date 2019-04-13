@@ -1,8 +1,8 @@
-const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development";
+const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development';
 
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${activeEnv}`,
-})
+});
 
 module.exports = {
   siteMetadata: {
@@ -21,10 +21,10 @@ module.exports = {
     'gatsby-plugin-eslint',
     'gatsby-plugin-styled-components',
     {
-      resolve: "gatsby-source-graphql",
+      resolve: 'gatsby-source-graphql',
       options: {
-        typeName: "BlogAPI",
-        fieldName: "blogapi",
+        typeName: 'BlogAPI',
+        fieldName: 'blogapi',
         url: process.env.API_URL,
       },
     },
