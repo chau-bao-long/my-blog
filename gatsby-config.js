@@ -1,9 +1,15 @@
+const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "development";
+
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'TOP BLOG',
     author: 'Chau Bao Long',
     description: 'RECORD INTERESTING STUFFS IN MY LIFE',
-    siteUrl: 'http://longcb.cf/',
+    siteUrl: 'http://longcb.me/',
     social: {
       twitter: 'topcbl',
     },
@@ -14,6 +20,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-eslint',
     'gatsby-plugin-styled-components',
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "BlogAPI",
+        fieldName: "blogapi",
+        url: process.env.API_URL,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
