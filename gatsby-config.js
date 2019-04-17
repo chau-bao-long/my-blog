@@ -25,7 +25,7 @@ module.exports = {
       options: {
         typeName: 'BlogAPI',
         fieldName: 'blogapi',
-        url: process.env.API_URL,
+        url: `${process.env.API_URL}/graphql`,
       },
     },
     {

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql, useStaticQuery } from 'gatsby';
 import tw from 'tailwind.macro';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
 
 import ListItem from './ListItem';
 import useCategoryFilter from './hooks/useCategoryFilter';
@@ -14,19 +16,34 @@ const Container = styled.div`
   grid-area: main;
 `;
 
+const socialQuery = gql`
+  query getSocials {
+    socialInfos {
+      commentCount
+      viewCount
+      blogId
+    }
+  }
+`;
+
 export default () => {
   const {
     coverFiles: { edges: covers }, allMarkdownRemark: { edges: posts },
   } = useStaticQuery(postQuery);
   const filteredPosts = useCategoryFilter(posts);
   return (
-    <Container>
-      {
-        filteredPosts.map(({ node }) => (
-          <ListItem key={node.frontmatter.date} node={node} covers={covers} />
-        ))
-      }
-    </Container>
+    <Query query={socialQuery}>
+      {({ data: { socialInfos } }) => (
+        <Container>
+          {
+            filteredPosts.map(({ node }) => {
+              const socialInfo = socialInfos && socialInfos.length ? socialInfos.find(d => d.blogId === node.fields.slug) : null;
+              return <ListItem key={node.frontmatter.date} node={node} covers={covers} socialInfo={socialInfo} />;
+            })
+          }
+        </Container>
+      )}
+    </Query>
   );
 };
 

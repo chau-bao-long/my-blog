@@ -6,6 +6,7 @@ import Image from 'gatsby-image';
 
 import { responsible, breakpoint } from '../../styles/mixins';
 import { color } from '../../styles/theme';
+import ListSocial from './ListSocial';
 
 const Container = styled.div`
   ${tw`flex flex-col items-center py-6 rounded-lg m-12`};
@@ -55,7 +56,7 @@ const ReadMoreBtn = styled(Link)`
   }
 `;
 
-export default ({ node, covers }) => {
+export default ({ node, covers, socialInfo }) => {
   const title = node.frontmatter.title || node.fields.slug;
   const cover = covers.find(c => (
     c.node.childImageSharp.fluid.originalName === node.frontmatter.cover.base
@@ -72,6 +73,7 @@ export default ({ node, covers }) => {
         }}
       />
       <ReadMoreBtn to={`blogs${node.fields.slug}`}>READ MORE</ReadMoreBtn>
+      <ListSocial socialInfo={socialInfo} />
     </Container>
   );
 };
