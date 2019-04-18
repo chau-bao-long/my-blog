@@ -19,3 +19,4 @@ const RootComponent = provideContext(({ element }) => (
 ));
 
 export const wrapRootElement = props => <RootComponent {...props} />;
+

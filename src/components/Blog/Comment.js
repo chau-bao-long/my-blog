@@ -46,14 +46,14 @@ const commentQuery = gql`
 
 const Comment = ({ blogId }) => (
   <Query query={commentQuery} variables={{ blogId }}>
-    {({ data: { comments }, loading }) => (
+    {({ data, loading }) => (
       <Container>
         <Title>
-          {comments && comments.length} Comments
+          {data && data.comments && data.comments.length} Comments
           {loading && <Loading />}
         </Title>
         <Divider />
-        <CommentList comments={comments} />
+        <CommentList comments={data && data.comments} />
         <CommentBox blogId={blogId} />
       </Container>
     )}

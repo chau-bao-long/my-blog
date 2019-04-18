@@ -33,11 +33,14 @@ export default () => {
   const filteredPosts = useCategoryFilter(posts);
   return (
     <Query query={socialQuery}>
-      {({ data: { socialInfos } }) => (
+      {({ data }) => (
         <Container>
           {
             filteredPosts.map(({ node }) => {
-              const socialInfo = socialInfos && socialInfos.length ? socialInfos.find(d => d.blogId === node.fields.slug) : null;
+              let socialInfo;
+              if (data && data.socialInfos && data.socialInfos.length) {
+                socialInfo = data.socialInfos.find(d => d.blogId === node.fields.slug);
+              }
               return <ListItem key={node.frontmatter.date} node={node} covers={covers} socialInfo={socialInfo} />;
             })
           }
