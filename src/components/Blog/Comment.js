@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
-// import { graphql, useStaticQuery } from 'gatsby';
+import { Query } from 'react-apollo';
+import gql from 'graphql-tag';
+import { Spin } from 'antd';
 
 import { color } from '../../styles/theme';
 import { breakpoint } from '../../styles/mixins';
+import CommentList from './CommentList';
+import CommentBox from './CommentBox';
 
 const Container = styled.section`
   ${tw`flex flex-col items-start p-6 rounded-lg`};
@@ -18,21 +22,42 @@ const Container = styled.section`
 const Title = styled.h3`
 `;
 
+const Loading = styled(Spin)`
+  ${tw`ml-4`};
+`;
+
 const Divider = styled.div`
   ${tw`w-16 h-px`};
   margin-bottom: 1rem;
   background: ${color.category};
 `;
 
-const Comment = ({ comments }) => (
-  <Container>
-    <Title>{comments.length} Comments</Title>
-    <Divider />
-  </Container>
-);
+const commentQuery = gql`
+  query getComments($blogId: ID!) {
+    comments(blogId: $blogId) {
+      author
+      content
+      blogId
+      commentId
+      createdAt
+    }
+  }
+`;
 
-Comment.defaultProps = {
-  comments: [],
-};
+const Comment = ({ blogId }) => (
+  <Query query={commentQuery} variables={{ blogId }}>
+    {({ data: { comments }, loading }) => (
+      <Container>
+        <Title>
+          {comments && comments.length} Comments
+          {loading && <Loading />}
+        </Title>
+        <Divider />
+        <CommentList comments={comments} />
+        <CommentBox blogId={blogId} />
+      </Container>
+    )}
+  </Query>
+);
 
 export default Comment;
